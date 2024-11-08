@@ -227,3 +227,75 @@
         }
     }
 }
+
+main {
+    margin-top: 60px;
+    width: 100%;
+    height: 100%;
+    .main-tit {
+        padding: 60px 0;
+        text-align: center;
+    }
+    .main-cont {
+        text-align: center;
+    }
+}
+
+// sub-2
+.main-search {
+    padding: 20px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    font-size: 1.4rem;
+    align-items: center;
+    .main-search__sel {
+        border-radius: 10px;
+        border: 1px solid #ccc;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        position: relative;
+        display: inline-block;
+        width: 100%;
+        .dropdown-icon {
+            position: absolute;
+            right: 10px; /* 아이콘 위치 */
+            top: 50%;
+            transform: translateY(-50%);
+            pointer-events: none; /* 아이콘 클릭 방지 */
+            span {
+                i {
+                    @include sr-only;
+                }
+                &::after {
+                    @include lineAwesome;
+                    content: "\f061";
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+    .main-search-lst {
+        width: 70%;
+
+        label {
+            padding-right: 5px;
+        }
+        select {
+            width: 98%;
+            margin: 5px;
+            height: 30px;
+            border: none;
+            padding-left: 10px;
+        }
+        input {
+            width: 98%;
+            height: 30px;
+            border: none;
+            margin: 5px;
+            padding-left: 10px;
+        }
+    }
+}

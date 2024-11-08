@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <!-- x축 스크롤막기 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1">
-    <title>MODB</title>
+    <title>MODB-sub2</title>
     <meta property="og:type" content="website">
     <meta property="og:title" content="PIGEON">
     <meta property="og:description" content="유지혜 - 피죤 개편 사이트">
@@ -129,18 +129,46 @@
             </div>
         </header>
         <main id="container">
-            <div class="main-tit">
-                <img src="../resources/images/MODB-icon.svg" alt="MODB">
-                <h3>무드비</h3>
+            <div class="main-search">
+                <div class="main-search__nat main-search-lst">
+                    <form action="#">
+                        <label for="nation">국가</label>
+                        <div class="main-search__sel">
+                            <select name="nations" id="nation">
+                                <option value="korea">대한민국</option>
+                                <option value="japan">일본</option>
+                                <option value="china">중국</option>
+                                <option value="united-kingdom">영국</option>
+                            </select>
+                            <span class="dropdown-icon">
+                                <i>버튼</i>
+                            </span> <!-- 드롭다운 아이콘 추가 -->
+                        </div>
+                    </form>
+                </div>
+                <div class="main-search__gen main-search-lst">
+                    <form action="#">
+                        <label for="genre">장르</label>
+                        <div class="main-search__sel">
+                            <select name="genres" id="genre">
+                                <option value="romance">로맨스</option>
+                                <option value="horror">공포</option>
+                                <option value="thriller">스릴러</option>
+                                <option value="fantasy">판타지</option>
+                            </select>
+                            <span class="dropdown-icon">▼</span> <!-- 드롭다운 아이콘 추가 -->
+                        </div>
+                    </form>
+                </div>
+                <div class="main-search__key main-search-lst">
+                    <label for="keyword">키워드</label>
+                    <div class="main-search__sel">
+
+                        <input type="text" placeholder="키워드를 적으세요." id="keyword">
+                    </div>
+                </div>
             </div>
             <div class="main-cont">
-                <pre>
-영화를 좋아하시나요?
-
-당신의 일기장이 되어드리겠습니다
-
-그저 새로운 이야기를 찾아 여행을 떠나보세요
-                </pre>
                 <img src="../resources/images/main.svg" alt="main">
             </div>
         </main>
