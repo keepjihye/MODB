@@ -3412,7 +3412,7 @@ main .main-tit {
   text-align: center;
 }
 main .main-tit img {
-  width: 40%;
+  width: 45%;
 }
 main .main-cont {
   text-align: center;
@@ -3486,7 +3486,7 @@ main .main-cont {
 }
 
 #container .main-tit h3 {
-  padding: 20px 0;
+  padding: 10px 0;
   font-size: 2rem;
 }
 #container .main-cont pre {
