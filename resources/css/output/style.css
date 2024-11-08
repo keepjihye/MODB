@@ -3412,7 +3412,7 @@ main .main-tit {
   text-align: center;
 }
 main .main-tit img {
-  width: 50%;
+  width: 40%;
 }
 main .main-cont {
   text-align: center;
@@ -3465,7 +3465,7 @@ main .main-cont {
   width: 70%;
 }
 .main-search .main-search-lst select {
-  width: 98%;
+  width: 95%;
   margin: 5px;
   height: 30px;
   border: none;
@@ -3487,11 +3487,11 @@ main .main-cont {
 
 #container .main-tit h3 {
   padding: 20px 0;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 #container .main-cont pre {
   margin: 0;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-weight: 600;
 }
 
