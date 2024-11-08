@@ -3256,7 +3256,7 @@ input[type=checkbox] {
   height: 60px;
   display: block;
   background: url(../../images/header-icon.svg) no-repeat 0 0;
-  background-size: 50px;
+  background-size: 40px;
   background-position: center;
 }
 #header #logo span {
@@ -3396,9 +3396,9 @@ input[type=checkbox] {
   font-family: "Line Awesome Free";
   font-weight: 900;
   content: "\f0c9";
-  width: 60px;
-  height: 60px;
-  font-size: 4rem;
+  width: 40px;
+  height: 40px;
+  font-size: 3rem;
   text-align: center;
 }
 
@@ -3418,12 +3418,6 @@ main .main-cont {
   text-align: center;
 }
 
-.main-search__ng {
-  display: flex;
-  width: 100%;
-  gap: 5%;
-}
-
 .main-search {
   padding: 20px 20px;
   text-align: left;
@@ -3432,6 +3426,11 @@ main .main-cont {
   gap: 30px;
   font-size: 1.4rem;
   align-items: center;
+}
+.main-search .main-search__ng {
+  display: flex;
+  width: 100%;
+  gap: 5%;
 }
 .main-search .main-search__sel {
   width: 100%;
