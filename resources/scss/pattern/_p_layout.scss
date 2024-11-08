@@ -233,8 +233,11 @@ main {
     width: 100%;
     height: 100%;
     .main-tit {
-        padding: 60px 0;
+        padding: 50px 0;
         text-align: center;
+        img {
+            width: 50%;
+        }
     }
     .main-cont {
         text-align: center;
@@ -294,4 +297,8 @@ main {
             background-color: $white;
         }
     }
+}
+
+.main-cont-sub {
+    padding-top: 40px;
 }

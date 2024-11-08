@@ -3408,8 +3408,11 @@ main {
   height: 100%;
 }
 main .main-tit {
-  padding: 60px 0;
+  padding: 50px 0;
   text-align: center;
+}
+main .main-tit img {
+  width: 50%;
 }
 main .main-cont {
   text-align: center;
@@ -3467,6 +3470,7 @@ main .main-cont {
   height: 30px;
   border: none;
   padding-left: 10px;
+  background-color: #fff;
 }
 .main-search .main-search-lst input {
   width: 98%;
@@ -3474,11 +3478,16 @@ main .main-cont {
   border: none;
   margin: 5px;
   padding-left: 10px;
+  background-color: #fff;
+}
+
+.main-cont-sub {
+  padding-top: 40px;
 }
 
 #container .main-tit h3 {
   padding: 20px 0;
-  font-size: 3.5rem;
+  font-size: 3rem;
 }
 #container .main-cont pre {
   margin: 0;
