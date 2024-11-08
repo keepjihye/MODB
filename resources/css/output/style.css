@@ -3425,14 +3425,13 @@ main .main-cont {
   align-items: center;
 }
 .main-search .main-search__sel {
-  border-radius: 10px;
-  border: 1px solid #ccc;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-around;
   position: relative;
   display: inline-block;
-  width: 100%;
+  margin-top: 10px;
 }
 .main-search .main-search__sel .dropdown-icon {
   position: absolute;
@@ -3441,7 +3440,7 @@ main .main-cont {
   transform: translateY(-50%);
   pointer-events: none; /* 아이콘 클릭 방지 */
 }
-.main-search .main-search__sel .dropdown-icon span i {
+.main-search .main-search__sel .dropdown-icon i {
   position: absolute !important;
   width: 1px !important;
   height: 1px !important;
@@ -3452,17 +3451,15 @@ main .main-cont {
   white-space: nowrap !important;
   border: 0 !important;
 }
-.main-search .main-search__sel .dropdown-icon span::after {
+.main-search .main-search__sel .dropdown-icon::after {
   font-family: "Line Awesome Free";
   font-weight: 900;
-  content: "\f061";
+  content: "\f107";
   font-weight: bold;
+  font-size: 1.5rem;
 }
 .main-search .main-search-lst {
   width: 70%;
-}
-.main-search .main-search-lst label {
-  padding-right: 5px;
 }
 .main-search .main-search-lst select {
   width: 98%;
@@ -3489,6 +3486,36 @@ main .main-cont {
   font-weight: 600;
 }
 
-.main-search .main-search__sel {
-  font-size: 1.3rem;
+.main-search label {
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+}
+
+.main-search__sel {
+  position: relative;
+  border-radius: 10px; /* 둥근 모서리 설정 */
+}
+
+.main-search__sel::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  border-radius: 10px;
+  padding: 2px;
+  background: linear-gradient(90deg, #c05879 40%, #ec977b 100%);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude;
+  z-index: -1;
+}
+
+.main-search__nat .main-search__sel::before {
+  background: linear-gradient(90deg, #302a56 40%, #73376d 100%);
+}
+
+.main-search__gen .main-search__sel::before {
+  background: linear-gradient(90deg, #73376d 20%, #c05879 80%);
 }/*# sourceMappingURL=style.css.map */

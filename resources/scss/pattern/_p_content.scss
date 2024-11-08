@@ -17,7 +17,48 @@
 
 // sub-2
 .main-search {
-    .main-search__sel {
-        font-size: 1.3rem;
+    // .main-search__sel {
+    //     font-size: 1.3rem;
+    //     border: 2px solid; /* 보더 두께 설정 */
+    //     border-radius: 10px;
+    //     border-image: linear-gradient(90deg, #c05879 40%, #ec977b 100%);
+    //     border-image-slice: 1;
+    // }
+    label {
+        font-size: 1.6rem;
+        margin-bottom: 20px;
+    }
+}
+
+.main-search__sel {
+    position: relative;
+    border-radius: 10px; /* 둥근 모서리 설정 */
+}
+
+.main-search__sel::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    border-radius: 10px;
+    padding: 2px;
+    background: linear-gradient(90deg, #c05879 40%, #ec977b 100%);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+    z-index: -1;
+}
+
+.main-search__nat {
+    .main-search__sel::before {
+        background: linear-gradient(90deg, #302a56 40%, #73376d 100%);
+    }
+}
+
+.main-search__gen {
+    .main-search__sel::before {
+        background: linear-gradient(90deg, #73376d 20%, #c05879 80%);
     }
 }
