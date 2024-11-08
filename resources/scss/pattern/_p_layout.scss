@@ -83,7 +83,7 @@
             height: 60px;
             display: block;
             background: url(../../images/header-icon.svg) no-repeat 0 0;
-            background-size: 40px;
+            background-size: 50px;
             background-position: center;
         }
         span {
@@ -207,10 +207,12 @@
 
 // util
 .util {
-    display: flex;
-    justify-content: space-between;
-    margin-left: 1vw;
-    font-family: "Noto Sans KR", serif;
+    @include tabletMore {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 1vw;
+    }
+
     .all_menu {
         @include tabletMore {
             display: none;
@@ -219,10 +221,11 @@
             display: block;
             @include lineAwesome;
             content: "\f0c9";
-            width: 40px;
-            height: 40px;
-            font-size: 3rem;
+            width: 60px;
+            height: 60px;
+            font-size: 3.5rem;
             text-align: center;
+            padding: 5px;
         }
     }
 }
@@ -245,7 +248,7 @@ main {
 
 // sub-2
 .main-search {
-    padding: 20px 20px;
+    padding: 20px 0;
     text-align: left;
     display: flex;
     flex-direction: column;
