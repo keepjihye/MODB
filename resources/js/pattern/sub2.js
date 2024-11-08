@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const selects = document.querySelectorAll(".main-search select");
     const input = document.querySelector(".main-search input[type='text']");
     const mainContImg = document.querySelector(".main-cont__img");
+    const mainContWrap = document.querySelector(".main-cont__wrap");
 
     function checkAllFilled() {
         // 모든 select 요소가 선택되었는지 확인
@@ -14,11 +15,12 @@ document.addEventListener("DOMContentLoaded", function () {
         // input 요소가 비어있지 않은지 확인
         const isInputFilled = input.value.trim() !== "";
 
-        // 모든 조건이 만족되면 main-cont__img를 숨김
         if (allSelectsFilled && isInputFilled) {
             mainContImg.style.display = "none";
+            mainContWrap.style.display = "flex"; // main-cont__wrap 표시
         } else {
             mainContImg.style.display = ""; // 조건이 충족되지 않으면 다시 표시
+            mainContWrap.style.display = "none"; // main-cont__wrap 숨김
         }
     }
 
@@ -28,5 +30,3 @@ document.addEventListener("DOMContentLoaded", function () {
     // input 요소의 포커스 아웃(blur) 이벤트 리스너 추가
     input.addEventListener("blur", checkAllFilled);
 });
-
-
